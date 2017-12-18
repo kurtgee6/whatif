@@ -1,0 +1,57 @@
+.para {
+    color: blue;
+    font-size: 140px;
+    opacity: 1; 
+    transition: all 200ms ease-in;
+}
+
+.js-para-animate {
+    opacity: 0;
+    animation: para-jiggle 250ms linear;
+}
+
+@keyframes para-jiggle {
+    0% {
+        transform: rotate(0)
+    }
+
+    33% {
+        transform: rotate(15deg)
+    }
+
+    66% {
+        transform: rotate(-15deg)
+    }
+
+    100% {
+        transform: rotate(0)
+    }
+}
+
+.word {
+    font-size: 50px;
+    opacity: 0;
+}
+
+.js-word-animate {
+    opacity: 1;
+    animation: word-jiggle 250ms linear;
+}
+
+@keyframes word-jiggle {
+    0% {
+        transform: rotate(0)
+    }
+
+    33% {
+        transform: rotate(15deg)
+    }
+
+    66% {
+        transform: rotate(-15deg)
+    }
+
+    100% {
+        transform: rotate(0)
+    }
+}
