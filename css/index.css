@@ -10,10 +10,14 @@ body {
     border-radius: 10px;  
     position: fixed;  
 }
-.input#search.validate.valid{
-    color: black;
-    background: yellow;
+
+.navProfile {
+    text-align: center;
+    padding: 5px;
+    height: 190px;
+    width: 175px;
 }
+
 .searchBar {
     margin-left: 180px;     
     width: 84%;
@@ -97,10 +101,6 @@ body {
     50% { border-color: orange }
   }
 
-.input-field {
-    color:orange;
-}  
-
 
 .content-word {
     font-size: 10px;
@@ -121,11 +121,11 @@ body {
     height: 490px;
     width: 345px;
 
-    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 4s; /* Firefox < 16 */
-     -ms-animation: fadein 4s; /* Internet Explorer */
-      -o-animation: fadein 4s; /* Opera < 12.1 */
-         animation: fadein 4s;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
 }
 
 @keyframes fadein {
@@ -165,15 +165,4 @@ body {
     width: 175px;
     margin-bottom: 0;
     margin-left: 0;
-}
-
-.navProfile {
-    text-align: center;
-    padding: 5px;
-    height: 160px;
-    width: 150px;
-}
-
-li a {
-    padding: 0px;
 }
