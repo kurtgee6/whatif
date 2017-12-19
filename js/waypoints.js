@@ -20,6 +20,6 @@
         } else {
             $word.removeClass('js-word-animate');        
         }
-    }, {offset: '450px'})
+    }, {offset: '250px'})
 
   });
