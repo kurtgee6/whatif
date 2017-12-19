@@ -15,7 +15,7 @@
     
     $word.waypoint(function (direction){
             $word.addClass('js-word-animate');
-    }, {offset: '250px'})
+    }, {offset: '570px'})
 
     $(window).scroll(function(){
         if($(window).scrollTop()>190){
