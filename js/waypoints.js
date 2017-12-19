@@ -14,12 +14,16 @@
     }, {offset: '60px'})
     
     $word.waypoint(function (direction){
-        if(direction == 'down') {
             $word.addClass('js-word-animate');
-            console.log('fsadf');
-        } else {
-            $word.removeClass('js-word-animate');        
-        }
     }, {offset: '250px'})
+
+    $(window).scroll(function(){
+        if($(window).scrollTop()>190){
+           $("#navProfile").fadeIn();
+        }else{
+           $("#navProfile").fadeOut();
+        }
+  
+  });
 
   });
