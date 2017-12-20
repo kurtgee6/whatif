@@ -2,14 +2,14 @@
  $(document).ready(function(){
     $('.scrollspy').scrollSpy();
 
-    var $para = $('.para');
+    var $profileImage = $('.profile-image');
     var $word = $('.word');
     
-    $para.waypoint(function (direction){
+    $profileImage.waypoint(function (direction){
         if(direction == 'down') {
-            $para.addClass('js-para-animate');
+            $profileImage.addClass('js-profile-image-animate');
         } else {
-            $para.removeClass('js-para-animate');        
+            $profileImage.removeClass('js-profile-image-animate');        
         }
     }, {offset: '60px'})
     
@@ -18,7 +18,7 @@
     }, {offset: '570px'})
 
     $(window).scroll(function(){
-        if($(window).scrollTop()>190){
+        if($(window).scrollTop()>168){
            $("#navProfile").fadeIn();
         }else{
            $("#navProfile").fadeOut();

@@ -1,16 +1,16 @@
-.para {
+.profile-image {
     color: blue;
     font-size: 140px;
     opacity: 1; 
     transition: all 200ms ease-in;
 }
 
-.js-para-animate {
+.js-profile-image-animate {
     opacity: 0;
-    animation: para-jiggle 250ms linear;
+    animation: profile-image-jiggle 250ms linear;
 }
 
-@keyframes para-jiggle {
+@keyframes profile-image-jiggle {
     0% {
         transform: rotate(0)
     }
@@ -56,3 +56,4 @@
         transform: rotate(0)
     }
 }
+/* jello movement */
