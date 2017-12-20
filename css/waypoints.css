@@ -56,4 +56,22 @@
         transform: rotate(0)
     }
 }
-/* jello movement */
+/* content-word right to left movement */
+.content-word{
+    animation: 
+      nudge 5s linear infinite alternate;
+  }
+  @keyframes nudge {
+    70%, 100% {
+      transform: translate(20px, 30px);
+    }
+  }
+#random-bubble{
+    animation: 
+      nudge 8s linear infinite alternate;
+  }
+  @keyframes nudge {
+    70%, 90% {
+      transform: translate(20px, 40px);
+    }
+}
