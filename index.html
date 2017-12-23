@@ -1,163 +1,166 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Quwento| Giorgio Armani</title>
+        <title>Quwento</title>
         <!-- my animation css file -->
         <link href="css/waypoints.css" rel="stylesheet">
         <!-- Materialize CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">    
         <!-- my regular css file -->
         <link href="css/index.css" rel="stylesheet">  
-        <!-- google font -->
-        <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
     </head>
-<body>
-    <!-- Left Navigation Bar -->
-    <div class="navBar" style="text-align:center;">
-       <img class="logo animated tada" src="logo.png" alt="Quwento Logo">
-       <p style="text-align:center;">Quwento</p>   
-       <ul class="section table-of-contents">
-            <li><a href="#synopsis">Synopsis</a></li>
-            <li><a href="#earlyLife">Early Life</a></li>
-            <li><a href="#theBrand">The Brand</a></li>
-            <li><a href="#personalLife">Personal Life</a></li>
-            <li><a href="#quickFacts">Quick Facts</a></li>
-            <li><a href="#photos">Photos</a></li>                        
-            <li><a href="#videos">Videos</a></li>            
-        </ul>
-        <br>
-        <img id="navProfile" style="display:none;" class="navProfile" src="armani.jpg" alt="Giorgio Armani">   
-    </div>
-
-    <!-- Search Bar -->
-    <div class="searchBar">
-        <input id="search" placeholder="Search Quwento" type="text" class="validate"> 
-    </div>
-
-    <!-- Container -->  
-    <div class="right-bottom-carton">
-        <!-- Name/year of person -->
-        <div class="nameOfPerson" style="margin: 10px; font-size:45px; font-family: 'Itim', cursive;">Giorgio Armani</div>
-        <div class="yearOfPerson" style="margin: 10px; font-size:30px; font-family: 'Itim', cursive;">(1934 - Present)</div>
-        <!-- Row -->
-        <div class="row">
-            <!-- Profile pic of person -->
-            <div class="col s4">    
-                <div class="profile-picture">
-                    <img class="profile-image" src="armani.jpg" alt="Giorgio Armani">                
+    <body>
+        <!-- |||||||||| LEFT NAVIGATION BAR ||||||||| -->
+        <div>
+            <ul id="slide-out" class="side-nav fixed">
+                <!-- Logo -->
+                <img class="logo animated tada" src="logo.png" alt="Quwento Logo">  
+                <!-- Search Bar -->
+                <input id="search" placeholder="Search Quwento" type="text" class="validate">                 
+                    <li><a href="#synopsis">Synopsis</a></li>
+                    <li><a href="#earlyLife">Early Life</a></li>
+                    <li><a href="#theBrand">The Brand</a></li>
+                    <li><a href="#personalLife">Personal Life</a></li>
+                    <li><a href="#quickFacts">Quick Facts</a></li>
+                    <li><a href="#photos">Photos</a></li>                        
+                    <li><a href="#videos">Videos</a></li>   
+                <br>
+                <img id="navProfile" style="display:none;" class="navProfile" src="armani.jpg" alt="Giorgio Armani">       
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>     
+        <!-- Container -->  
+        <div class="carton">
+            <!-- |||||||||||||||  NAME ||||||||||||||||-->
+            <div id="nameOfPerson">Giorgio Armani</div>
+            <!-- |||||||||||||||  SYNOPSIS ||||||||||||||||
+                 |||||||||||||||  SYNOPSIS ||||||||||||||||
+                 |||||||||||||||  SYNOPSIS |||||||||||||||| -->
+            <div class="scrollspy jello" id="synopsis">
+                <p>SYNOPSIS</p>            
+                <!-- Profile pic of person -->
+                <div class="col s4">    
+                    <div class="profile-picture">
+                        <img class="profile-image" src="armani.jpg" alt="Giorgio Armani">                
+                    </div>
                 </div>
-            </div>
-            <!-- Synopsis -->
-            <p id="synopsis" class="scrollspy" style="margin: 0px; margin-top: 30px; font-size: 60px; font-family: 'Itim', cursive;">Synopsis</p>            <div class="col s8">
-                <h6 id="random-bubble"></h6>                                                                                                
-                <div class="content-word" style="font-family: 'Itim', cursive; font-size:15px; text-align: center;">
-                    Born on July 11, 1934, in Italy, Giorgio Armani is an iconic 
-                    clothing designer who has expanded his empire to include restaurants 
-                    and hotels. His popularity skyrocketed in America in the 1980s when his 
-                    men's 'power suits' appeared frequently on the television series Miami Vice 
-                    and in the 1980 film American Gigolo, which starred Richard Gere in Armani's 
-                    signature garb.
-                </div>
-            </div>
-            <div class="content-word"></div>                                                                                                            
-            <h6 id="random-bubble"></h6>                                                                                                
-            
-            <!-- Early Life -->
-            <div class="col s12">            
-                <h3 style="text-align: center; font-size: 30px; font-family: 'Itim', cursive;">Early Life</h3>
-                <p id="earlyLife" class="word scrollspy" style="font-family: 'Itim', cursive;">
-                        Designer Giorgio Armani was born on July 11, 1934, in Piacenza, Italy. 
-                        With his body-conscious yet understated clothing, Giorgio Armani has become one 
-                        of the most popular names in fashion. He first launched his business empire in the mid-1970s, 
-                        and it has grown substantially over the years. The Armani brand now includes makeup, housewares, 
-                        books and hotels. The son of a shipping manager, Armani grew up in a small town outside of Milan. 
-                        It was a difficult time in Italian history. Giorgio and his two siblings—older brother Sergio and 
-                        younger sister Rosanna—experienced the hardships of World War II firsthand. Some of his friends 
-                        were killed during Allied bombings. "We were poor and life was tough," he explained to 
-                        Harper's Bazaar. "The cinema in Milan was a refuge—a palace of dreams—and the movie stars 
-                        seemed so glamorous. I fell in love with the idealized beauty of Hollywood stars."                     
+                <div class="col s8">
+                    <h6 id="random-bubble">1934 to Present</h6>                                                                                                
+                    <div class="content-word" style="font-family: 'Itim', cursive; font-size:15px; text-align: center;">
+                        Born on July 11, 1934, in Italy, Giorgio Armani is an iconic 
+                        clothing designer who has expanded his empire to include restaurants 
+                        and hotels. His popularity skyrocketed in America in the 1980s when his 
+                        men's 'power suits' appeared frequently on the television series Miami Vice 
+                        and in the 1980 film American Gigolo, which starred Richard Gere in Armani's 
+                        signature garb.
+                    </div>
+                </div>   
+            </div>                                                                                            
+            <!-- |||||||||||||||  EARLY LIFE ||||||||||||||||
+                 |||||||||||||||  EARLY LIFE ||||||||||||||||
+                 |||||||||||||||  EARLY LIFE |||||||||||||||| -->
+            <div class="scrollspy jello" id="earlyLife">            
+                <h3>EARLY LIFE</h3>
+                <p>
+                    Designer Giorgio Armani was born on July 11, 1934, in Piacenza, Italy. 
+                    With his body-conscious yet understated clothing, Giorgio Armani has become one 
+                    of the most popular names in fashion. He first launched his business empire in the mid-1970s, 
+                    and it has grown substantially over the years. The Armani brand now includes makeup, housewares, 
+                    books and hotels. The son of a shipping manager, Armani grew up in a small town outside of Milan. 
+                    It was a difficult time in Italian history. Giorgio and his two siblings—older brother Sergio and 
+                    younger sister Rosanna—experienced the hardships of World War II firsthand. Some of his friends 
+                    were killed during Allied bombings. "We were poor and life was tough," he explained to 
+                    Harper's Bazaar. "The cinema in Milan was a refuge—a palace of dreams—and the movie stars 
+                    seemed so glamorous. I fell in love with the idealized beauty of Hollywood stars."                     
                 </p>
-
-            
-            
-            <!-- The Brand -->
-            <h2 style="text-align: center; font-size: 40px; font-family: 'Itim', cursive;">The Brand</h2>
-            
-                    <p id="theBrand" style="text-align: center; font-size: 30px; font-family: 'Itim', cursive;" class="scrollspy jello">
-                            While his designs were popular in Europe, 
-                            Armani didn't make a big splash in America until 1980. His clothes were worn by 
-                            actor Richard Gere in the film American Gigolo (1980), which helped generate a lot 
-                            of interest in Armani. He also provided much of the wardrobe for the hit television 
-                            series Miami Vice (1984-89), starring Don Johnson. Soon, many top Hollywood stars started 
-                            wearing Armani on the red carpet, including Michelle Pfeiffer, Jodie Foster and John 
-                            Travolta, among others.
-                    </p>
-            <!-- Personal Life -->
-            <h2 style="text-align: center; font-size: 40px; font-family: 'Itim', cursive;">Early Designs</h2>
-                    
-                    <p id="personalLife" style="text-align: center; font-size: 30px; font-family: 'Itim', cursive;" class="scrollspy">
-                            After completing his military service, 
-                            Armani dropped out of university and went to work at La Rinascente, 
-                            a famous Milan department store. He then joined the staff of Nino Cerruti as a designer. 
-                            With the encouragement of his friend Sergio Galeotti, Armani started to do 
-                            freelance design work for other companies as well.
-                            Armani and Galeotti became business partners, founding Giorgio Armani S.p.A. 
-                            in July 1975. The company's first collection—a men's clothing line—debuted 
-                            that year. Armani launched a women's collection the following year, which received a
-                            warm reception. His clothes were revolutionary at the time, introducing a more natural 
-                            fit and using a subtle color palette. "My vision was clear: I believed in getting 
-                            rid of the artifice of clothing. I believed in neutral colors," he later told WWD.
-                            
-                            
-                    </p>
-        
-            <!-- Quick Facts-->
-            <h2 style="text-align: center; font-size: 40px; font-family: 'Itim', cursive;">Expanding The Empire</h2>
-                    
-                    <p id="quickFacts" style="text-align: center; font-size: 30px; font-family: 'Itim', cursive;" class="scrollspy">
-                                After completing his military service, 
-                                Armani dropped out of university and went to 
-                                work at La Rinascente, a famous Milan department store. 
-                                He then joined the staff of Nino Cerruti as a designer. 
-                                With the encouragement of his friend Sergio Galeotti,
-                                Armani started to do freelance design work for other companies as well.
-                    </p>
-
-            <!-- Photos -->
-            <h2 style="text-align: center; font-size: 40px; font-family: 'Itim', cursive;">Personal Life</h2>
-                    
-                    <p id="photos" style="text-align: center; font-size: 30px; margin-bottom: 650px; font-family: 'Itim', cursive;" class="scrollspy">
-                                After completing his military service, 
-                                Armani dropped out of university and went to 
-                                work at La Rinascente, a famous Milan department store. 
-                                He then joined the staff of Nino Cerruti as a designer. 
-                                With the encouragement of his friend Sergio Galeotti,
-                                Armani started to do freelance design work for other companies as well.
-                    </p>
-            <!-- Videos -->
-            <h2 style="text-align: center; font-size: 40px; font-family: 'Itim', cursive;">Personal Life</h2>
-            
-            <p id="videos" style="text-align: center; font-size: 30px; margin-bottom: 650px; font-family: 'Itim', cursive;" class="scrollspy">
-                        After completing his military service, 
-                        Armani dropped out of university and went to 
-                        work at La Rinascente, a famous Milan department store. 
-                        He then joined the staff of Nino Cerruti as a designer. 
-                        With the encouragement of his friend Sergio Galeotti,
-                        Armani started to do freelance design work for other companies as well.
-            </p>
-
+            </div>
+            <!-- |||||||||||||||  THE BRAND ||||||||||||||||
+                 |||||||||||||||  THE BRAND ||||||||||||||||
+                 |||||||||||||||  THE BRAND |||||||||||||||| -->
+            <div class="scrollspy jello" id="theBrand">
+                <h2>THE BRAND</h2>
+                <p>
+                    While his designs were popular in Europe, 
+                    Armani didn't make a big splash in America until 1980. His clothes were worn by 
+                    actor Richard Gere in the film American Gigolo (1980), which helped generate a lot 
+                    of interest in Armani. He also provided much of the wardrobe for the hit television 
+                    series Miami Vice (1984-89), starring Don Johnson. Soon, many top Hollywood stars started 
+                    wearing Armani on the red carpet, including Michelle Pfeiffer, Jodie Foster and John 
+                    Travolta, among others.
+                <!-- </p> -->
+            </div>
+            <!-- |||||||||||||||  PERSONAL LIFE ||||||||||||||||
+                 |||||||||||||||  PERSONAL LIFE ||||||||||||||||
+                 |||||||||||||||  PERSONAL LIFE |||||||||||||||| -->
+            <div class="scrollspy jello" id="personalLife">
+                <h2>PERSONAL LIFE</h2>    
+                <p>
+                    After completing his military service, 
+                    Armani dropped out of university and went to 
+                    work at La Rinascente, a famous Milan department store. 
+                    He then joined the staff of Nino Cerruti as a designer. 
+                    With the encouragement of his friend Sergio Galeotti,
+                    Armani started to do freelance design work for other companies as well.
+                </p>
+            </div>
+            <!-- |||||||||||||||  QUICK FACTS ||||||||||||||||
+                 |||||||||||||||  QUICK FACTS ||||||||||||||||
+                 |||||||||||||||  QUICK FACTS |||||||||||||||| -->
+            <div class="scrollspy jello" id="quickFacts">
+                <h2>QUICK FACTS</h2>
+                <p>
+                    After completing his military service, 
+                    Armani dropped out of university and went to work at La Rinascente, 
+                    a famous Milan department store. He then joined the staff of Nino Cerruti as a designer. 
+                    With the encouragement of his friend Sergio Galeotti, Armani started to do 
+                    freelance design work for other companies as well.
+                    Armani and Galeotti became business partners, founding Giorgio Armani S.p.A. 
+                    in July 1975. The company's first collection—a men's clothing line—debuted 
+                    that year. Armani launched a women's collection the following year, which received a
+                    warm reception. His clothes were revolutionary at the time, introducing a more natural 
+                    fit and using a subtle color palette. "My vision was clear: I believed in getting 
+                    rid of the artifice of clothing. I believed in neutral colors," he later told WWD. 
+                </p>
+            </div>
+            <!-- |||||||||||||||  PHOTOS ||||||||||||||||
+                 |||||||||||||||  PHOTOS ||||||||||||||||
+                 |||||||||||||||  PHOTOS |||||||||||||||| -->
+            <div class="scrollspy jello" id="photos">
+                <h2>PHOTOS</h2>
+                <p>
+                    After completing his military service, 
+                    Armani dropped out of university and went to 
+                    work at La Rinascente, a famous Milan department store. 
+                    He then joined the staff of Nino Cerruti as a designer. 
+                    With the encouragement of his friend Sergio Galeotti,
+                    Armani started to do freelance design work for other companies as well.
+                </p>
+            </div>
+            <!-- |||||||||||||||  VIDEOS ||||||||||||||||
+                 |||||||||||||||  VIDEOS ||||||||||||||||
+                 |||||||||||||||  VIDEOS |||||||||||||||| -->
+            <div class="scrollspy jello" id="videos">
+                <h2>VIDEOS</h2>
+                <p>
+                    After completing his military service, 
+                    Armani dropped out of university and went to 
+                    work at La Rinascente, a famous Milan department store. 
+                    He then joined the staff of Nino Cerruti as a designer. 
+                    With the encouragement of his friend Sergio Galeotti,
+                    Armani started to do freelance design work for other companies as well.
+                </p>
+            </div>
         </div>
-    </div>
-    </div>
-    <!-- Jquery Source -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Materialize js source-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-    <!-- waypoints jquery source -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- my javascript file -->
-    <script src="js/waypoints.js"></script>
-    
-</body>
+         <!-- ||||||||||||||| JAVASCRIPT SOURCES ||||||||||||| -->
+        <!-- Jquery Source -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Materialize js source-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+        <!-- waypoints jquery source -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- my javascript file -->
+        <script src="js/waypoints.js"></script>
+    </body>
 </html>
 
