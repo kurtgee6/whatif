@@ -1,44 +1,167 @@
-.profile-image {
-    color: blue;
-    font-size: 140px;
-    opacity: 1; 
-    transition: all 200ms ease-in;
-}
+/* /////////////////////////////////////////////////////////////////////////////
+/////////////////////////// LEFT NAVIGATION BAR /////////////////////////////// 
+////////////////////////////////////////////////////////////////////////////// */
 
-.js-profile-image-animate {
-    opacity: 0;
-    animation: profile-image-jiggle 250ms linear;
+/* TADA ANIMATIONS ON LOGO */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
-
-@keyframes profile-image-jiggle {
+.animated:hover {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes tada {
     0% {
-        transform: rotate(0)
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
     }
-
-    33% {
-        transform: rotate(15deg)
+  
+    10%, 20% {
+      -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
     }
-
-    66% {
-        transform: rotate(-15deg)
+  
+    30%, 50%, 70%, 90% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
     }
-
+  
+    40%, 60%, 80% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+  
     100% {
-        transform: rotate(0)
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
     }
 }
+@keyframes tada {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      -ms-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    10%, 20% {
+      -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+      -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    30%, 50%, 70%, 90% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+  
+    40%, 60%, 80% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      -ms-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+}
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+}
+/* /////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// ALL ALL ALL ////////////////////////////////// 
+////////////////////////////////////////////////////////////////////////////// */
 
+/* JELLO EFFECT */
+@keyframes jello {
+    11.1% {
+      transform: none;
+    }
+    22.2% {
+      transform: skewX(-12.5deg) skewY(-12.5deg);
+    }
+    33.3% {
+      transform: skewX(6.25deg) skewY(6.25deg);
+    }
+    44.4% {
+      transform: skewX(-3.125deg) skewY(-3.125deg);
+    }
+    55.5% {
+      transform: skewX(1.5625deg) skewY(1.5625deg);
+    }
+    66.6% {
+      transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    }
+    77.7% {
+      transform: skewX(0.390625deg) skewY(0.390625deg);
+    }
+    88.8% {
+      transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    }
+    100% {
+      transform: none;
+    }
+}
+.jello {
+    animation: jello 20s infinite;
+    transform-origin: center;
+}
+/* /////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// SYNOPSIS ///////////////////////////////// 
+////////////////////////////////////////////////////////////////////////////// */
+
+/* PROFILE IMAGE ANIMATION */
+.profile-image {
+    margin: 2px;
+
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 4s;
+}
+/* FADE-IN EFFECT  */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* WORD ANIMATION */
 .word {
     font-size: 30px;
     text-align: center;
     opacity: 0;
 }
-
 .js-word-animate {
     opacity: 1;
     animation: word-jiggle 250ms linear;
 }
-
 @keyframes word-jiggle {
     0% {
         transform: rotate(0)
@@ -56,22 +179,22 @@
         transform: rotate(0)
     }
 }
-/* content-word right to left movement */
-.content-word{
-    animation: 
-      nudge 5s linear infinite alternate;
-  }
-  @keyframes nudge {
-    70%, 100% {
-      transform: translate(20px, 30px);
-    }
-  }
-#random-bubble{
-    animation: 
-      nudge 8s linear infinite alternate;
-  }
-  @keyframes nudge {
-    70%, 90% {
-      transform: translate(20px, 40px);
-    }
-}
+/* /////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////// THE BRAND ///////////////////////////////// 
+////////////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////////////////
+////////////////////////////////// PERSONAL LIFE ////////////////////////////// 
+////////////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// QUICK FACTS ////////////////////////////////// 
+////////////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// PHOTOS ///////////////////////////////// 
+////////////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// VIDEOS ///////////////////////////////// 
+////////////////////////////////////////////////////////////////////////////// */
